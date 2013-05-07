@@ -1,0 +1,5 @@
+package socialmedia
+
+object Twitter {
+
+}
