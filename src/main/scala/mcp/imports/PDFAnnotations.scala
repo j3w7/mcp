@@ -12,7 +12,7 @@ import org.apache.pdfbox.pdmodel.common.COSArrayList
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationTextMarkup
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationText
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPopup
-import scala.implicits.FileImplicits._
+import mcp.scala.implicits.FileImplicits._
 import org.apache.pdfbox.util.PDFTextStripperByArea
 import org.apache.pdfbox.pdmodel.common.PDRectangle
 import java.awt.geom.Rectangle2D

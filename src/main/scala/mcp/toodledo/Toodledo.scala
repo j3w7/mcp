@@ -20,6 +20,8 @@ import org.w3c.dom.NodeList
 import org.xml.sax.InputSource
 import org.xml.sax.SAXException
 
+import mcp.Properties._
+
 class Task {
   var id: String = _
   var title: String = _
@@ -36,11 +38,10 @@ class Task {
 }
 
 object Toodledo {
-  // TODO you must get the 4 values below from Toodledo
-  var appID = "wukong"
-  var userID = "jensw"
-  var userPW = "W3haotoc"
-  var applicationToken = "api5013cff47eee3"
+  var appID = property("toodledo.appID")
+  var userID = property("toodledo.userID")
+  var userPW = property("toodledo.userPW")
+  var applicationToken = property("toodledo.applicationToken")
 
   var fields = "folder,context,tag,status,priority,length,note" // get these fields when downloading tasks
 

@@ -10,6 +10,8 @@ object RSS extends App {
 
   def getFeed(url: URL) = new SyndFeedInput().build(new XmlReader(url))
 
+  // test
+  
   private val url = new URL("http://feeds.feedburner.com/bingimages")
   private val feed = getFeed(url)
 

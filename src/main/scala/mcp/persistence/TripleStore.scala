@@ -10,6 +10,8 @@ import org.openrdf.rio.RDFFormat
 import java.net.URL
 import java.io.IOException
 
+import mcp.Properties.property
+
 /**
  * http://www.openrdf.org/doc/sesame2/users/ch08.html#d0e686
  */
@@ -18,7 +20,7 @@ object TripleStore {
   /*
    * local repository with in-file persistence
    */
-  val dataDir = new File("c:\\tmp\\repo\\")
+  val dataDir = new File(property("sesame.localdbpath")) 
   val myRepository = new SailRepository(new NativeStore(dataDir))
   myRepository.initialize
 
@@ -39,4 +41,4 @@ object TripleStore {
     case e: Exception ⇒ e.printStackTrace
   }
 
-}
+}mcp

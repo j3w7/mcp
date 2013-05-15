@@ -13,10 +13,9 @@ import net.liftweb.json.Serialization._
 import scalaj.http.Http
 import scalaj.http.Http.Request
 import scalaj.http.HttpOptions
+import mcp.Properties._
 
 class TodoistService {
-
-  val conf = ConfigFactory.load("todoist.properties");
 
   val base_url = "https://todoist.com"
   val _login = "/API/login"
@@ -44,8 +43,8 @@ class TodoistService {
 
   def connect() = {
     val result = login(
-      conf.getString("todoist.email"),
-      conf.getString("todoist.password")
+      property("todoist.email"),
+      property("todoist.password")
     )
     val JString(token) = result \ "api_token"
     this.token = token
