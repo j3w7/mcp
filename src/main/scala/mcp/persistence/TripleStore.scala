@@ -41,4 +41,4 @@ object TripleStore {
     case e: Exception ⇒ e.printStackTrace
   }
 
-}mcp
+}

@@ -158,11 +158,11 @@
 		<!-- <artifactId>lucene-analyzers-common</artifactId> -->
 		<!-- <version>4.0.0-ALPHA</version> -->
 		<!-- </dependency> -->
-		<dependency>
-			<groupId>org.openrdf.sesame</groupId>
-			<artifactId>sesame</artifactId>
-			<version>2.6.10</version>
-		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>org.openrdf.sesame</groupId> -->
+		<!-- <artifactId>sesame</artifactId> -->
+		<!-- <version>[2.0,)</version> -->
+		<!-- </dependency> -->
 
 		<!-- <dependency> -->
 		<!-- <groupId>org.scalaz</groupId> -->
@@ -193,6 +193,25 @@
 			<groupId>rome</groupId>
 			<artifactId>rome</artifactId>
 			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<!-- needed for git interaction -->
+			<groupId>org.eclipse.jgit</groupId>
+			<artifactId>org.eclipse.jgit</artifactId>
+			<version>[2.1,)</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.50</version>
+		</dependency>
+
+		<dependency>
+			<groupId>salma-hayek</groupId>
+			<artifactId>salma-hayek</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
